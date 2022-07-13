@@ -240,8 +240,9 @@ MAIN CONTENT
 OUR TEAM 
 */
 
-.our-team > h2,
-.about-us > h2 {
+.our-team h2,
+.about-us h2,
+.our-clients h2 {
   font-size: 36px;
   font-weight: 700;
   color: var(--almost-black-font-color);
@@ -300,7 +301,7 @@ OUR TEAM
   justify-content: space-between;
   column-gap: 10px;
 }
-.social-links-list li button {
+.social-links-list li a {
   width: 44px;
   height: 44px;
   cursor: pointer;
@@ -311,7 +312,7 @@ OUR TEAM
   background-color: var(--white-color);
   fill: #afb1b8;
 }
-.social-links-list li button:hover {
+.social-links-list li a:hover {
   fill: var(--white-color);
   background-color: var(--brand-blue-color);
   border-radius: 50%;
@@ -334,6 +335,9 @@ OUR CLIENTS
   display: flex;
   column-gap: 30px;
 }
+.our-clients h2 {
+  padding-bottom: 50px;
+}
 .our-clients-list-elem {
   width: 170px;
   height: 92px;
@@ -343,6 +347,13 @@ OUR CLIENTS
   border: rgba(175, 177, 184, 1) 1px solid;
   border-radius: 4px;
   fill: #afb1b8;
+}
+.our-clients-list-elem-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .our-clients-list-elem:hover {
   fill: var(--brand-blue-color);
@@ -361,17 +372,57 @@ footer {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.7;
+  display: flex;
+  justify-content: center;
+}
+footer .section {
+  padding: 60px 0px;
+}
+footer .container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  column-gap: 70px;
 }
 
-.footer-content {
+.footer-logo-adress {
   display: flex;
   flex-direction: column;
   gap: 20px;
   align-items: flex-start;
 }
-footer .section {
-  padding: 60px 0px;
+.footer-social-links {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 }
+.footer-social-links p {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.17;
+  color: var(--white-color);
+}
+.footer-social-links-list {
+  display: flex;
+  column-gap: 10px;
+}
+.footer-social-links-list li a {
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  fill: var(--white-color);
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-social-links-list li a:hover {
+  background-color: var(--brand-blue-color);
+}
+
 .webstudio-footer-logo-link {
   color: var(--white-color);
   text-decoration: none;
