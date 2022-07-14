@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -61,7 +62,9 @@
       <section class="main-banner section">
         <div class="container">
           <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button type="button" class="btn-zamow-usluge">Zamów usługę</button>
+          <button type="button" class="btn-order" data-modal-open>
+            Zamów usługę
+          </button>
         </div>
       </section>
       <section class="main-content section">
@@ -441,5 +444,11 @@
         </div>
       </section>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-button" data-modal-close>X</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
