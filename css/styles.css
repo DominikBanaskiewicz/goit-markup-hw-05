@@ -218,7 +218,10 @@ MAIN CONTENT
 .main-content {
   display: flex;
   flex-direction: column;
+  padding: 0px;
+  margin: 94px auto;
 }
+
 .main-content-list {
   display: flex;
   gap: 30px;
@@ -229,7 +232,7 @@ MAIN CONTENT
   font-size: 14px;
   line-height: 16.41px;
   color: var(--almost-black-font-color);
-  padding-bottom: 10px;
+  padding: 30px 0px 10px 0px;
 }
 .main-content-list-elem > p {
   font-weight: 400;
@@ -260,7 +263,8 @@ MAIN CONTENT
  ABOUT US
  */
 .about-us {
-  padding-top: 94px;
+  padding: 0px;
+  margin-bottom: 94px;
 }
 .about-us h2 {
   text-align: center;
@@ -294,7 +298,11 @@ MAIN CONTENT
 /* 
 OUR TEAM 
 */
-
+.our-team {
+  background-color: var(--our-team-backround-color);
+  display: flex;
+  flex-direction: column;
+}
 .our-team h2,
 .about-us h2,
 .our-clients h2 {
@@ -306,12 +314,6 @@ OUR TEAM
 .our-team h2 {
   text-align: center;
   padding-bottom: 50px;
-}
-
-.our-team {
-  background-color: var(--our-team-backround-color);
-  display: flex;
-  flex-direction: column;
 }
 
 .our-team-list {
@@ -334,7 +336,7 @@ OUR TEAM
   flex-direction: column;
   gap: 10px;
   margin-top: 30px;
-  margin-bottom: 9px;
+  margin-bottom: 16px;
 }
 
 .our-team-elem > h3 {
@@ -387,6 +389,10 @@ OUR TEAM
 OUR CLIENTS
 
 */
+.our-clients {
+  padding: 0px;
+  margin: 94px 0px;
+}
 .our-clients-list {
   display: flex;
   column-gap: 30px;
@@ -633,8 +639,6 @@ BACKDROP
   margin: 5% auto;
   border: 1px solid #888;
   width: 30%;
-  max-width: 600px;
-  max-height: 600px;
   height: 40%;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -646,20 +650,16 @@ BACKDROP
   top: 8px;
   right: 8px;
   border-radius: 50%;
-  border-color: rgba(0, 0, 0, 0.1);
-  border-style: solid;
-  border-width: 1px;
+  border: solid 1px var(--background-dark-color);
+  font-weight: bold;
 }
 
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  background-color: rgba(0, 0, 0, 0.2);
-  transform: scale(0);
 }
 .close-button:active {
-  background-color: rgba(0, 0, 0, 0.2);
   color: red;
-  transform: scale(1);
+  transform: scale(1.1);
 }
