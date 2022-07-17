@@ -631,7 +631,7 @@ BACKDROP
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity 1000ms, visibility 1000ms;
+  transition: opacity 500ms, visibility 500ms;
 }
 .modal {
   position: relative;
